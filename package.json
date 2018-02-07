@@ -4,12 +4,16 @@
   "description": "Electron Canvas Game",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "github.com/vvuri/jspython.git"
   },
   "author": "vvuri",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.2"
+  }
 }

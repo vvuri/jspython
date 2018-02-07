@@ -1,5 +1,7 @@
 const electron = require('electron');
 const app = electron.app;  // создали главный процесс
+const BrowserWindow = electron.BrowserWindow;
+let appWindow;
 
 // обработчики событий
 app.on('ready', () => {
@@ -14,6 +16,8 @@ app.on('window-all-closed', function() {
 function createWindow() {
     appWindow = new BrowserWindow({
         width: 450,
-        height: 500
+        height: 500,
+        //frame:false,
+        resizable:false
     });
 };
