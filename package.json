@@ -1,0 +1,15 @@
+{
+  "name": "jspython",
+  "version": "1.0.0",
+  "description": "Electron Canvas Game",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/vvuri/jspython.git"
+  },
+  "author": "vvuri",
+  "license": "ISC"
+}
