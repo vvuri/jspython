@@ -20,6 +20,21 @@
    "start": "electron ."
 8. Запуск приложения:
    npm start
-   
+
+
+### План
+- Добавить простой текст на экране
+- Добавить Canvas
+- Добавить main.html
+- Добавить тесты - Jest
+- Провеирть покрытие тестами
+- Можно ли в тестах использовать webdrive  
+    https://electronjs.org/docs/tutorial/using-selenium-and-webdriver
+- убрать рамку, добавить закрытие окна
+- оценить объем проекта
+- запустить на ноуте - т.к. как это распространять как приложение
+    https://electronjs.org/docs/tutorial/application-packaging
+- возможность мобильной версии?
+
       
         

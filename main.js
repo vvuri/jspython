@@ -6,6 +6,9 @@ let appWindow;
 // обработчики событий
 app.on('ready', () => {
    createWindow();
+   
+   appWindow.loadURL(`file://${__dirname}/main.html`); 
+   
 });
 
 app.on('window-all-closed', function() {
@@ -15,7 +18,7 @@ app.on('window-all-closed', function() {
 // создание самого окна
 function createWindow() {
     appWindow = new BrowserWindow({
-        width: 450,
+        width: 422,
         height: 500,
         //frame:false,
         resizable:false
