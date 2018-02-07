@@ -13,7 +13,7 @@
 4. пишем все в main.html - он запускается в браузере - получили змейку
 5. создаем файлы
     - main.js
-    - scripts - не создавал пока
+    - scripts 
     - renderer.js
 6. npm install electron --save-dev
 7. в package.json добавим в scripts 
@@ -24,7 +24,13 @@
     appWindow.webContents.openDevTools();
 10. Добавляем билдер
     npm install electron-builder --save-dev 
-        
+11. создаем каталог build
+   помещаем туда icon.png для windows min 256x256
+   прописываем пункты в package.json
+   запускаем сборку    
+   npm run dist
+12. Итого получаем 37Мбайт exe файл установщика
+    Который вешает иконку на рабочий стол
 
 
 ### План
@@ -32,11 +38,6 @@
 - Провеирть покрытие тестами
 - Можно ли в тестах использовать webdrive  
     https://electronjs.org/docs/tutorial/using-selenium-and-webdriver
-- сбилдить «electron builder»    
-- оценить объем проекта
-- запустить на ноуте - т.к. как это распространять как приложение
-    https://electronjs.org/docs/tutorial/application-packaging
-- возможность мобильной версии?
 
       
         
