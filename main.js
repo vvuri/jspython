@@ -2,17 +2,23 @@ const electron = require('electron');
 const app = electron.app;  // создали главный процесс
 const BrowserWindow = electron.BrowserWindow;
 let appWindow;
+const appMenu = require('./scripts/appMenu');  // упровление меню
 
 // обработчики событий
 app.on('ready', () => {
-   createWindow();
+    createWindow();
    
-   appWindow.loadURL(`file://${__dirname}/main.html`); 
-   
+    const template = appMenu(app, appWindow);
+    const menu = electron.Menu.buildFromTemplate(template);
+    electron.Menu.setApplicationMenu(menu);
+
+
+    appWindow.loadURL(`file://${__dirname}/main.html`); 
+    // appWindow.webContents.openDevTools(); // открыть консоль отладки прямо в окне
 });
 
 app.on('window-all-closed', function() {
-   app.quit();
+    app.quit();
 });
 
 // создание самого окна
