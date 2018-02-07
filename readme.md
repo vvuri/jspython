@@ -22,6 +22,9 @@
    npm start
 9. Добавление консоли отладки
     appWindow.webContents.openDevTools();
+10. Добавляем билдер
+    npm install electron-builder --save-dev 
+        
 
 
 ### План
@@ -29,7 +32,7 @@
 - Провеирть покрытие тестами
 - Можно ли в тестах использовать webdrive  
     https://electronjs.org/docs/tutorial/using-selenium-and-webdriver
-- убрать рамку, добавить закрытие окна
+- сбилдить «electron builder»    
 - оценить объем проекта
 - запустить на ноуте - т.к. как это распространять как приложение
     https://electronjs.org/docs/tutorial/application-packaging
