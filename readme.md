@@ -39,13 +39,18 @@
 15. Запуск тестов 
     npm test
     jest --coverage  что бы посмотреть на покрытие кода тестами
-    
+16. Ставим Spectron - ChromeDriver testing framework for Electron 
+    npm install --save-dev spectron    
+    добавляем тест try_septron.js
+    запуск аналогично npm test
+    - пока вариант не разаботал -
+17. Еще один вариант   
+    npm install selenium-webdriver
 
    
 
 ### План
 - Добавить тесты - Jest
-- Провеирть покрытие тестами
 - Можно ли в тестах использовать webdrive  
     https://electronjs.org/docs/tutorial/using-selenium-and-webdriver
 
