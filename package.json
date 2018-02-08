@@ -4,7 +4,7 @@
   "description": "Electron Canvas Game",
   "main": "main.js",
   "scripts": {
-    "test": "test",
+    "test": "jest",
     "start": "electron . --enable-logging",
     "dist": "electron-builder"
   },
@@ -16,12 +16,13 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^1.8.2",
-    "electron-builder": "^19.56.0"
+    "electron-builder": "^19.56.0",
+    "jest": "^22.2.1"
   },
   "build": {
     "appId": "com.example.app",
     "win": {
-        "icon": "build/icon.png"
+      "icon": "build/icon.png"
     }
-}
+  }
 }
